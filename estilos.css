@@ -11,13 +11,7 @@ nav{
     height: 80px;
     width: 100%;
 }
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
-.logo{
-    height: 40px;
-}
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -91,7 +85,7 @@ section{
 	align-content: stretch;
 }
 .sectionFlex2 p {background-color: #ff8274 ;
-      margin: 10%; 
+    margin: 10%; 
 	border: 8px ridge  rgb(255, 119, 119);
     display: flex;
 
@@ -275,6 +269,7 @@ background-position: center;
 grid-column: 1/2;
 grid-row: 3/4;
 }
+
 @media only screen and (min-width:360px) {
     .listado{
         grid-template-columns: 1fr 1fr;
@@ -298,9 +293,13 @@ grid-row: 3/4;
         width: auto;
         padding: auto;
     }
+    footer{
+        flex: auto;
+    }
 }
 
-@media only screen and (min-width:768px) and (max-width:768px){
+@media only screen and (min-width:600px) and (max-width:768px){
+
     .contenedor{
         grid-template-columns: repeat(3, 1fr);
     }
