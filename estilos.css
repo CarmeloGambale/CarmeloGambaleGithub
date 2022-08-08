@@ -5,6 +5,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+body{
+    background-color: #f9d6d5 ;
+}
 
 nav{
     background-color: #ff8274;
@@ -44,13 +47,29 @@ nav ul li a{
 #check{
     display: none;
 }
-section{
-    background: url(fondo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
+.carouselslide{
+    width: 1360px;
+    height: 720px; 
 }
-
+.carousel-inner img {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px; 
+  }
+.carousel-itemactive{
+ justify-content: center;   
+ justify-items: center;
+}
+.carousel-control-prev{
+    font-size: 40px;
+    color: #ff8e8e;
+}
+.carousel-control-next{
+    font-size: 40px;
+    color: #ff8e8e;
+}
+    
 
 .sectionFlex{
 	display: flex;
@@ -99,11 +118,18 @@ section{
 h2{
     display: flex;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 5px #EC7063; 
-    
+    color: #fff;
+    font-size: 32px;
+    background-color: #EC7063;
+    text-transform: uppercase ;
+}
+.sec1{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
     text-align: center;
@@ -134,6 +160,7 @@ footer{
     font-weight: 100px;
     text-transform: capitalize;
     line-height: 3px;
+    text-align: center;
 }
 .contenedorfooter p{
     max-width: 500px;
@@ -157,15 +184,16 @@ footer{
 .sociales a{
     text-decoration: none;
     color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
-    border-radius: 50%;
 }
 
 .sociales a i{
-    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
     width: 20px;
     transition: color .4s ease;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .sociales a:hover i{
@@ -173,19 +201,7 @@ footer{
     transition: 1s;
 }
 
-.footerbottom{
-    background:#EC7063;
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-.footerbottom p{
-    float: left;
-    font-size: 20px;
-    word-spacing: 2px;
-    text-transform: capitalize;
- }
+ /*Grids html Marcas*/
 .contenedor{
 align-content: center;
 height: auto;
@@ -193,10 +209,12 @@ width: 100%;
 background-color:rgb(255, 222, 179);
 display: grid; 
 grid-area: auto;
-grid-template-columns: repeat(6,1fr);
+grid-template-columns: repeat(4,1fr);
 grid-template-rows: 200px 200px 200px;
 grid-gap: 20px;
 padding: 20px;
+margin-top: 100px;
+margin-bottom: 100px;
 
 }
 .item{
@@ -230,7 +248,7 @@ grid-row: 1/2;
 
 }
 .item3{
-background-image: url(img/qsoft.png);   
+background-image: url(img/LOGO_PLENITUD.png);   
 background-size: cover;
 background-position:center;
 /* grid-area: img3;*/
@@ -278,7 +296,9 @@ grid-row: 3/4;
         flex: auto;
     }
     .encabezado,.BarradeMenu1,.BarradeMenu{
-        flex: auto;
+       flex: auto;
+       width: auto;
+       padding: auto;
     }
     body{
         width: auto;
@@ -293,12 +313,15 @@ grid-row: 3/4;
         width: auto;
         padding: auto;
     }
-    footer{
-        flex: auto;
+    footer, .contenedorfooter, .footerbottom{
+       width: auto;
+       flex: auto;
+
     }
+ 
 }
 
-@media only screen and (min-width:600px) and (max-width:768px){
+@media only screen and (min-width:767px) and (max-width:768px){
 
     .contenedor{
         grid-template-columns: repeat(3, 1fr);
@@ -325,13 +348,14 @@ grid-row: 3/4;
     }
     .item6{
         grid-column: 4/5;
-        grid-row: 2/4;}
+        grid-row: 2/4;
+    }
 
     .item7{
         grid-column: 1/2;
         grid-row: 3/4;
     }
-   
+
 }
 
 @media only screen and (min-width:768px){
@@ -364,5 +388,6 @@ grid-row: 3/4;
     .item7{
         grid-area: img7;
     }
+
   
 }

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
 
     <title>Inicio</title>
 </head>
@@ -14,22 +18,60 @@
     <div class="gridContainer">
 <header>
     <h1>NONNY BEBE</h1>
-    <nav>
-        <ul class="Menu">
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="PAGE/productos.html">Productos</a></li>
-            <li><a href="PAGE/formasdepago.html">Formas de Pago</a></li>
-            <li><a href="PAGE/marcas.html">Marcas</a></li>
-            <li><a href="PAGE/Soporte.html">Soporte</a></li>
+    <nav class="encabezado">
+        <ul class="BarradeMenu1">
+            <li class="BarradeMenu"><a class="active" href="index.html">Inicio</a></li>
+            <li class="BarradeMenu"><a href="PAGE/productos.html">Productos</a></li>
+            <li class="BarradeMenu"><a href="PAGE/formasdepago.html">Formas de Pago</a></li>
+            <li class="BarradeMenu"><a href="PAGE/marcas.html">Marcas</a></li>
+            <li class="BarradeMenu"><a href="PAGE/Soporte.html">Soporte</a></li>
         </ul>
     </nav>
 </header>
+<main>
+    <!-- Empieza el carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imagen1" src="img/huggies.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="imagen2" src="img/babysec.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="imagen 3" src="img/pampers.jpg">
+          </div>
+        </div>
+     
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+      <!-- Termina el carousel -->
+      </body>
+      </html>
+
+</main>
+<h2 id="sec1">Te contamos sobre nosotros</h2>
+<section class="sec1">Nonny bebe es una empresa la cual trata de ofrecer todo tipo de productos a los bebes del mundo desde que estan en la panza de mami hasta que crecen y dejan de usar pañales. Por eso cuando decidimos empezar con Nonny Bebe nos enfocamos en tratar de cumplir el objetivo de sastifacer a todos las familias que tomaron la decision de comprar en nuestra empresa </section>
+    
 <footer>
 <div class="contenedorfooter">
     <h3>NONNY BEBE</h3>
-    <P>
-        NONNY BEBE ES UN EMPRENDIMIENTO EL CUAL SE TRATA DE LA VENTA DE PRODUCTOS QUE UTILIZAN BEBES YA SEAN PAÑALES, CHUPETES, ETC. Y PRODUCTOS PARA GENTE ADULTA COMO PAÑALES Y/O APOSITOS
-    </P>
+    <P>Todos los derechos de COPYRIGHT reservados 2022 </P>
    <ul class="sociales">
     <li>
         <a href="">
@@ -47,10 +89,7 @@
         </a>
     </li>
    </ul>
-</div>
-<div class="footerbottom">
-    <p>Todos los derechos de COPYRIGHT reservados 2022 </p>
-</div>     
+</div>   
 </footer>
 </body>
 </html>
