@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.pañalera diseñodi0">
-    <<link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
         <title>Soporte</title>
 
 </head>
 
 <body>
     <header>
-        <h1>NONNY BEBE</h1>
         <nav>
             <ul class="Menu">
-                <li><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="formasdepago.html">Formas de Pago</a></li>
                 <li><a href="marcas.html">Marcas</a></li>
                 <li><a href="Soporte.html">Soporte</a></li>
             </ul>
-            <section></section>
         </nav>
-        <h3>Formulario de consultas</h3>
-        <ul>
-            <li>
-                <form action="enviar.php" method="post" enctype="text/plain">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" placeholder="escriba su nombre" name="nombre" required><br>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" required><br>
-                    <label for="mail">Correo:</label>
-                    <input type="email" name="mail" id=""><br>
-                    <label for="CONSULTA">Consulta:</label>
-                    <textarea name="Consulta" id="" cols="30" rows="5"
-                        placeholder="escribe tu consulta "></textarea><br>
-
-                    <input type="radio" name="sexo">
-                    <label for="sexo">Mujer</label>
-                    <input type="radio" name="sexo">
-                    <label for="sexo">Hombre</label>
-                    <input type="radio" name="sexo">
-                    <label for="sexo">Otro</label><br>
-                    <h5>¿De que zona nos consultas?</h5>
-                    <select name="Zonas">
-                        <option value="">Escobar</option>
-                        <option value="">Maschwitz</option>
-                        <option value="">Garin</option>
-                        <option value="">Matheu</option>
-                        <option value="">Campana</option>
-                    </select><br><br>
-                    <input type="reset" name="" id="">
-                    <input type="button" value="enviar"><br>
+        <main class="soporte">
+        <h3>Formulario de consultas</h3>    
+            <div class="contact-form">
+                <form action="">
+                    <p>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo Electronico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Numero de Celular</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="5"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Send
+                        </button>
+                    </p>
                 </form>
-            </li>
-        </ul>
+            </div> 
+    </main>
         <footer>
             <div class="contenedorfooter">
                 <h3>NONNY BEBE</h3>
