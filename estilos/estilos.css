@@ -1,6 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
+@import "reset";
+*{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -17,6 +16,7 @@ nav {
     height: 80px;
     width: 100%;
 }
+
 
 nav ul {
     float: right;
@@ -58,9 +58,9 @@ li a:hover {
 
 /*Carousel*/
 #demo {
-    width: 100%;
     display: grid;
     justify-content: center;
+    
 }
 
 .carousel-itemactive {
